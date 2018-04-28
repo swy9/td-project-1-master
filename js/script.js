@@ -1,5 +1,4 @@
 // Creating an array of objects and assigning it as a variable name quotes
-
 var quotes = [
     {
         quote : "You don't realize Jesus is all you need until Jesus is all you have.",
@@ -59,7 +58,6 @@ var quotes = [
 ];
 
 // This function randomly picks an rgb color value, using a for loop 
-
 function getRandomColor() {
 	var letters = '0123456789ABCDEF';
 	var color = '#';
@@ -69,14 +67,13 @@ function getRandomColor() {
 	return color;
 }
 // This function randomly picks the quote object from an quotes array. 
-
 function getRandomQuote() {
     var randomNumber = Math.floor(Math.random() * quotes.length);
     return quotes[randomNumber];
 };
+
 // This function prints out the return values from the previous functions I created and place the values
 // into the designated section in an HTML file. 
-
 function printQuote() {
     document.body.style.backgroundColor = getRandomColor();
     var outQuote = getRandomQuote();
